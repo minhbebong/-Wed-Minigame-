@@ -1,0 +1,775 @@
+/* li a.btn-primary {
+    background-color: #e4e4e4;
+    padding: 0.5rem 0.5rem;
+    color: rgb(85,85,85);
+    outline: none;
+   
+} */
+
+/* css navbar with search  */
+
+a i.bxs-user-circle {
+    color: rgb(85,85,85);
+    display: block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav.sub-menu li a {
+    
+    color: #fff !important;
+} 
+
+
+nav.sub-menu {
+    background-color: rgb(59,114,67) !important;
+}
+
+.btn-navbar-search .bx {
+    vertical-align: inherit;
+    margin-top: -3px;
+    font-size: 1.15rem;
+}
+
+.form-control {
+    height: calc(2.5rem + 2px);
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.btn-navbar-search{
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+.bx.icon-single {
+    font-size: 1.5rem;
+}
+
+.form-inline .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-inline .btn-navbar-search{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.navbar-nav .btn .bxs-user-circle {
+    font-size: 1.8rem;
+}
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .form-inline .form-control {
+        width: 210px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .form-inline .form-control {
+        width: 440px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .form-inline .form-control {
+        width: 600px;
+    }
+}
+
+.sub-menu.navbar-light .navbar-nav .active>.nav-link, .sub-menu.navbar-light .navbar-nav .nav-link.active, .sub-menu.navbar-light .navbar-nav .nav-link.show, .sub-menu.navbar-light .navbar-nav .show>.nav-link {
+    border-bottom: 3px solid #007bff;
+    color: #007bff;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+}
+
+.navbar-light .navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.main-menu {
+    position: relative;
+    z-index: 3;
+}
+
+.sub-menu {
+    position: relative;
+    z-index: 2;
+    padding: 0 1rem;
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .sub-menu {
+        padding: 0 1rem;
+    }
+    .sub-menu.navbar-expand-md .navbar-nav .nav-link {
+        padding: 1rem 1.5rem;
+    }
+}
+
+.navbar.bg-light {
+    background: #fff !important;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.user-dropdown .nav-link {
+    padding: 0.15rem 0;
+}
+
+#sidebar {
+    background: #fff;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    position: fixed;
+    transition: 0.4s ease-in-out;
+    width: 84%;
+    z-index: 5001;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    padding: 1.25rem 1rem 1rem;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#sidebar .sidebar-header {
+    background: #fff;
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 1.5rem;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 40px;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px 16px;
+    font-size: 1.1em;
+    display: block;
+    color: #000;
+}
+
+#sidebar ul li a:hover {
+    color: #7386d5;
+    background: #fff;
+}
+
+#sidebar ul li.active>a, #sidebar a[aria-expanded="true"] {
+    color: #007bff;
+    background: #e6f2ff;
+    border-radius: 6px;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+#sidebar .links .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+/* section {
+    padding: 6rem;
+    background: #e4e4e4;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+} */
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+    width: 100%;
+    opacity: 0;
+}
+
+.overlay.visible {
+    opacity: 1;
+    z-index: 5000;
+}
+
+/* .mobiHeader .menuActive~.overlay {
+      opacity: 1;
+      width: 100%;
+  } */
+
+ul.social-icons {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+ul.social-icons li {
+    display: inline-block;
+    margin-right: 0px;
+    margin-bottom: 0;
+}
+
+#sidebar ul.social-icons li a {
+    font-size: 24px;
+}
+
+.utility-nav {
+    background: #e4e4e4;
+    padding: 0.5rem 1rem;
+}
+
+.utility-nav p {
+    margin-bottom: 0;
+}
+
+.search-bar {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar .form-control {
+    width: calc(100% - 45px);
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 8px;
+}
+
+.avatar.avatar-xs {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+.user-dropdown .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+
+/* end navbar with search  */
+
+
+/* css carousel  */
+
+.carousel-item {
+    height: 300px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* min-height: 160px; */
+}
+
+#carouselExampleControls {
+    max-height: 300px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 300px;
+    /* object-fit: cover */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(100%);
+    /* background-color: white; */
+}
+
+/* .banner-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    color: black
+} */
+
+/* .carousel-indicators li {
+    height: 0.8rem;
+    width: .8rem;
+    border-radius: 50%;
+    background-color: white
+} */
+
+@media only screen and (max-width: 46.1875em) {
+    #carouselExampleControls, .carousel-item img {
+        height: 160px;
+        object-fit: cover
+    }
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    #carouselExampleControls, .carousel-item img {
+        height: 230px;
+        /* object-fit: cover */
+    }
+}
+
+@media only screen and (min-width: 64em) {}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+/* end css carousel */
+
+/* home category  */
+.p-category {
+    font-size: 1.75rem;
+    font-weight: 900;
+    border-bottom: solid 1px;
+    margin-top: 1.75rem;
+    box-shadow: 0 4px 5px -5px black;
+}
+
+/* end home category  */
+
+/* css list product and category  */
+
+.wrapper__products {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto
+}
+
+.wrapper__products .h3 {
+    font-weight: 900
+}
+
+.views {
+    font-size: 0.85rem
+}
+
+.btn__product {
+    color: #666;
+    font-size: 0.85rem
+}
+
+.btn__product:hover {
+    color: #61b15a
+}
+
+.green-label {
+    background-color: #defadb;
+    color: #48b83e;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin: 0 3px
+}
+
+.radio__filter,
+.checkbox__filter {
+    padding: 6px 10px
+}
+
+.border {
+    border-radius: 12px
+}
+
+.options {
+    position: relative;
+    padding-left: 25px
+}
+
+.radio__filter label,
+.checkbox__filter label {
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0
+}
+
+.options input {
+    opacity: 0
+}
+
+.checkmark {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 50%
+}
+
+.options input:checked~.checkmark:after {
+    display: block
+}
+
+.options .checkmark:after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    display: block;
+    background: white;
+    position: absolute;
+    top: 52%;
+    left: 51%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out 0s
+}
+
+.options input[type="radio"]:checked~.checkmark {
+    background: #61b15a;
+    transition: 300ms ease-in-out 0s
+}
+
+.options input[type="radio"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.count {
+    font-size: 0.8rem
+}
+
+label {
+    cursor: pointer
+}
+
+.tick {
+    display: block;
+    position: relative;
+    padding-left: 23px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin: 0
+}
+
+.tick input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+
+.check {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 3px
+}
+
+.tick:hover input~.check {
+    background-color: #f3f3f3
+}
+
+.tick input:checked~.check {
+    background-color: #61b15a
+}
+
+.check:after {
+    content: "";
+    position: absolute;
+    display: none
+}
+
+.tick input:checked~.check:after {
+    display: block;
+    transform: rotate(45deg) scale(1)
+}
+
+.tick .check:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg) scale(2)
+}
+
+#sort,
+#country {
+    font-size: 0.8rem;
+    border: none;
+    border-left: 1px solid #ccc;
+    padding: 0px 10px;
+    outline: none;
+    font-weight: 900
+}
+
+
+
+.close {
+    font-size: 1.2rem
+}
+
+div.text-muted {
+    font-size: 0.85rem
+}
+
+#sidebar__category {
+    width: 25%;
+    float: left
+}
+
+.category {
+    font-size: 0.9rem;
+    cursor: pointer
+}
+
+.list-group-item {
+    border: none;
+    padding: 0.3rem 0.4rem 0.3rem 0rem
+}
+
+.badge-primary {
+    background-color: #defadb;
+    color: #48b83e
+}
+
+.brand .check {
+    background-color: #fff;
+    top: 3px;
+    border: 1px solid #666
+}
+
+.brand .tick {
+    font-size: 1rem;
+    padding-left: 25px
+}
+
+.rating .check {
+    background-color: #fff;
+    border: 1px solid #666;
+    top: 0
+}
+
+.rating .tick {
+    font-size: 0.9rem;
+    padding-left: 25px
+}
+
+.rating .fas.fa-star {
+    color: #ffbb00;
+    padding: 0px 3px
+}
+
+.brand .tick:hover input~.check,
+.rating .tick:hover input~.check {
+    background-color: #f9f9f9
+}
+
+.brand .tick input:checked~.check,
+.rating .tick input:checked~.check {
+    background-color: #61b15a
+}
+
+#products {
+    width: 75%;
+    padding-left: 30px;
+    margin: 0;
+    float: right
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer
+}
+
+.card-body {
+    padding: 0.5rem
+}
+
+.card-body .description {
+    font-size: 0.78rem;
+    padding-bottom: 8px
+}
+
+div.h6,
+h6 {
+    margin: 0
+}
+
+.product__card_icon .fa-star {
+    font-size: 0.9rem
+}
+
+.rebate {
+    font-size: 0.9rem
+}
+
+.btn__product.btn-primary {
+    background-color: #48b83e;
+    color: #fff;
+    border: 1px solid #008000;
+    border-radius: 10px;
+    font-weight: 800
+}
+
+.btn__product.btn-primary:hover {
+    background-color: #48b83ee8
+}
+
+.card .card-img-top {
+    margin: auto;
+    width: 192px;
+    height: 132px;
+    object-fit: contain
+}
+
+.clear__filtre {
+    clear: both
+}
+
+.btn__product.btn-success {
+    visibility: hidden
+}
+
+@media(min-width:992px) {
+
+    .filter,
+    #mobile-filter {
+        display: none
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+
+    .radio__filter,
+    .checkbox__filter {
+        padding: 6px 10px;
+        width: 49%;
+        float: left;
+        margin: 5px 5px 5px 0px
+    }
+
+    .filter,
+    #mobile-filter {
+        display: none
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    #sidebar__category {
+        width: 35%
+    }
+
+    #products {
+        width: 65%
+    }
+
+    .filter,
+    #mobile-filter {
+        display: none
+    }
+
+    .wrapper__products .h3+.ml-auto {
+        margin: 0
+    }
+}
+
+@media(max-width:575px) {
+    .wrapper__products {
+        padding: 10px
+    }
+
+    .wrapper__products .h3 {
+        font-size: 1.3rem
+    }
+
+    #sidebar__category {
+        display: none
+    }
+
+    #products {
+        width: 100%;
+        float: none
+    }
+
+    #products {
+        padding: 0
+    }
+
+    .clear__filtre {
+        float: left;
+        width: 80%
+    }
+
+    .btn__product.btn-success {
+        visibility: visible;
+        margin: 10px 0px;
+        color: #fff;
+        padding: 0.2rem 0.1rem;
+        width: 20%
+    }
+
+    .green-label {
+        width: 50%
+    }
+
+    .btn__product.text-success {
+        padding: 0
+    }
+
+    .content__category,
+    #mobile-filter {
+        clear: both
+    }
+}
+
+/* end css list product and category  */
+
